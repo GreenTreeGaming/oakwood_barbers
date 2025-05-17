@@ -21,7 +21,7 @@ const Section2 = () => {
           </p>
           <p className="text-sm text-orange-200 italic mt-4">
             *All prices subject to change<br />
-            **All services to be done at barber's discretion
+            **All services to be done at barber&apos;s discretion
           </p>
         </div>
       </div>
