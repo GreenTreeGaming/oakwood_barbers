@@ -1,4 +1,5 @@
-// app/components/Footer.tsx
+'use client'
+
 import React from 'react'
 
 const Footer = () => {
@@ -27,41 +28,34 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Right Side: Contact */}
+        {/* Right Side: About */}
         <div>
           <h2 className="text-2xl font-bold uppercase mb-4 tracking-wide font-serif">
-            Contact
+            About Oakwood Barbers
           </h2>
-          <p className="text-sm text-gray-300 mb-6">
-            <span className="font-semibold">Phone:</span> (763) 473-5887
+          <p className="text-sm text-gray-300 mb-4 leading-relaxed">
+            At Oakwood Barbers, tradition meets precision. We're more than just a barbershop —
+            we’re a neighborhood staple where generations of families have come for clean cuts,
+            beard trims, and timeless style.
           </p>
-          <form className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
-              <input type="text" placeholder="First Name" className="bg-neutral-800 text-white px-4 py-2 rounded-sm w-full" />
-              <input type="text" placeholder="Last Name" className="bg-neutral-800 text-white px-4 py-2 rounded-sm w-full" />
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <input type="email" placeholder="Email Address" className="bg-neutral-800 text-white px-4 py-2 rounded-sm w-full" />
-              <input type="tel" placeholder="Phone Number" className="bg-neutral-800 text-white px-4 py-2 rounded-sm w-full" />
-            </div>
-            <textarea
-              placeholder="Enter your message here..."
-              rows={4}
-              className="bg-neutral-800 text-white px-4 py-2 rounded-sm w-full"
-            ></textarea>
-            <button
-              type="submit"
-              className="px-6 py-2 border border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white transition rounded-sm"
-            >
-              Submit
-            </button>
-          </form>
+          <p className="text-sm text-gray-300 leading-relaxed">
+            Our skilled barbers are passionate about their craft and committed to delivering top-tier service with every visit.
+            Whether it’s your first time or your hundredth, we make every appointment feel like home.
+          </p>
         </div>
       </div>
 
-      {/* Bottom */}
+     {/* Bottom */}
       <div className="text-center text-sm text-gray-400 mt-12 border-t border-gray-700 pt-4">
-        Copyright © {new Date().getFullYear()} Oakwood Barbers
+        Copyright © {new Date().getFullYear()} Oakwood Barbers | Built by{" "}
+        <a
+          href="https://sarvajithkarun.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-orange-500 hover:underline"
+        >
+          Sarvajith Karun
+        </a>
       </div>
     </footer>
   )

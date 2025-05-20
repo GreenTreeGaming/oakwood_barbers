@@ -14,61 +14,47 @@ import { motion } from 'framer-motion'
 
 const Section1 = () => {
   return (
-    <section className="relative h-screen w-full text-white font-sans overflow-hidden">
-      {/* Background */}
+    <section className="relative h-screen w-full text-white font-sans overflow-hidden bg-neutral-950">
+      {/* Background Image */}
       <Image
         src="/barber_img.webp"
         alt="Barbershop background"
         layout="fill"
         objectFit="cover"
-        className="absolute inset-0 z-0 brightness-50"
+        className="absolute inset-0 z-0 object-cover brightness-[0.4]"
         priority
       />
 
-      {/* Overlay Content */}
-      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-6">
-        <motion.div
-          className="backdrop-blur-md bg-black/30 p-10 rounded-2xl shadow-2xl max-w-3xl w-full"
-          initial={{ opacity: 0, y: 50 }}
+      {/* Content */}
+      <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4">
+        <motion.h1
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-extrabold leading-tight tracking-tight"
+          initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
+          transition={{ duration: 0.8 }}
         >
-          <motion.h1
-            className="text-6xl md:text-8xl font-extrabold tracking-tight uppercase leading-tight font-serif"
-            initial={{ opacity: 0, y: -40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.7 }}
-          >
-            Oakwood <span className="block text-orange-400">Barbers</span>
-          </motion.h1>
+          Classic Cuts. Timeless Style.
+          <br className="hidden sm:block" />
+          Trusted Since Day One.
+        </motion.h1>
 
-          <motion.p
-            className="mt-6 text-lg md:text-xl text-gray-200 font-light italic border-t border-b border-white/10 py-4 font-sans"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-          >
-            Specializing exclusively in men’s and boy’s haircuts with timeless precision and modern style.
-          </motion.p>
-
-          <motion.button
-            className="mt-8 bg-orange-400 text-white text-lg px-8 py-3 rounded-full font-semibold shadow-md hover:bg-orange-500 transition-all duration-300 font-sans"
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 1, duration: 0.6 }}
-          >
-            Book Appointment
-          </motion.button>
-        </motion.div>
-
-        {/* Down Arrow */}
-        <motion.div
-          className="absolute bottom-6 text-white text-3xl"
-          animate={{ y: [0, -10, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5 }}
+        <motion.p
+          className="mt-6 text-base sm:text-lg md:text-xl text-gray-200 max-w-xl font-sans"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
         >
-          ↓
-        </motion.div>
+          Experience the art of traditional barbering at Oakwood Barbers, where precision meets tradition.
+        </motion.p>
+
+        <motion.button
+          className="mt-8 bg-orange-600 hover:bg-orange-700 transition text-white px-6 py-3 text-sm md:text-base font-semibold font-sans tracking-wide"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.8, duration: 0.5 }}
+        >
+          Book an Appointment →
+        </motion.button>
       </div>
 
       {/* Social Icons */}
@@ -76,7 +62,7 @@ const Section1 = () => {
         className="absolute top-1/2 left-6 z-20 -translate-y-1/2 hidden md:flex flex-col space-y-5"
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.6 }}
+        transition={{ delay: 1, duration: 0.6 }}
       >
         {[FaFacebookF, FaTwitter, FaGooglePlusG, FaPinterestP, FaLinkedinIn, FaEnvelope].map((Icon, idx) => (
           <Icon

@@ -6,14 +6,15 @@ import { motion } from 'framer-motion'
 
 const Section3 = () => {
   return (
-    <section className="bg-neutral-900 text-white py-10 px-6 text-center">
+    <section className="bg-neutral-950 text-white py-16 px-6 text-center font-sans">
       <motion.div
-        className="flex flex-col items-center justify-center space-y-4"
+        className="flex flex-col items-center justify-center space-y-6"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
+        {/* Heading */}
         <motion.div
           className="flex items-center gap-3"
           initial={{ opacity: 0, y: -20 }}
@@ -21,23 +22,28 @@ const Section3 = () => {
           transition={{ delay: 0.2, duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <FaClock className="text-2xl text-orange-400" />
-          <h2 className="text-2xl font-bold uppercase tracking-wide font-serif">
+          <FaClock className="text-2xl text-orange-500" />
+          <h2 className="text-3xl font-bold tracking-wide font-serif">
             Barbershop Hours
           </h2>
         </motion.div>
 
+        {/* Schedule */}
         <motion.div
-          className="text-sm md:text-base text-orange-300 space-y-1"
+          className="text-base text-gray-300 space-y-2"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <p className="font-semibold">Tuesday – Friday</p>
-          <p>9 AM – 6 PM</p>
-          <p className="font-semibold pt-2">Saturday</p>
-          <p>9 AM – 1 PM</p>
+          <div>
+            <p className="font-semibold text-white">Tuesday – Friday</p>
+            <p>9 AM – 6 PM</p>
+          </div>
+          <div className="pt-4">
+            <p className="font-semibold text-white">Saturday</p>
+            <p>9 AM – 1 PM</p>
+          </div>
         </motion.div>
       </motion.div>
     </section>
