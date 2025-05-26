@@ -5,9 +5,9 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const barbers = [
-  { name: 'Greg', img: '/greg.jpg' },
+  { name: 'Mike', img: '/mike2.tiff' },
   { name: 'Shannon', img: '/shannon.jpg' },
-  { name: 'Mike', img: '/mike.jpg' },
+  { name: 'Greg', img: '/greg.jpg' },
 ]
 
 const Section4 = () => {
