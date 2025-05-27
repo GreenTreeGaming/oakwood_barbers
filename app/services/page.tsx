@@ -12,42 +12,42 @@ const services = [
   {
     name: "Men's Haircuts",
     icon: <FaCut />,
-    image: '/empty.jpg',
+    image: '/gallery_images/IMG_3175.png',
     desc: 'Tailored, precise cuts for the modern gentleman.',
     price: '$30',
   },
   {
     name: "Boys' Haircuts",
     icon: <FaChild />,
-    image: '/empty.jpg',
+    image: '/gallery_images/IMG_3182.png',
     desc: 'Fun, stylish cuts for kids of all ages.',
     price: '$25',
   },
   {
     name: 'Beard Trimming & Shaping',
     icon: <FaUserTie />,
-    image: '/empty.jpg',
+    image: '/gallery_images/IMG_3184.png',
     desc: 'Clean lines and perfect fades for every beard type.',
     price: '$20 (+$5 w/ razor)',
   },
   {
     name: 'Hot Towel Shave',
     icon: <FaHotjar />,
-    image: '/empty.jpg',
+    image: '/gallery_images/IMG_3193.PNG',
     desc: 'Traditional straight razor shave with hot towel treatment.',
     price: '$35',
   },
   {
     name: 'Senior Haircuts',
     icon: <FaUserClock />,
-    image: '/empty.jpg',
+    image: '/gallery_images/IMG_3201.png',
     desc: 'Classic cuts for 65+ with care and attention.',
     price: '$24 (Weekdays)',
   },
   {
     name: 'Style Consultation',
     icon: <FaComments />,
-    image: '/empty.jpg',
+    image: '/gallery_images/IMG_3210.png',
     desc: 'Discuss your best look — complimentary with any service.',
     price: 'FREE',
   },
@@ -123,12 +123,12 @@ const ServicesPage = () => {
             </ul>
           </div>
           <div className="relative w-full h-80 rounded-md overflow-hidden">
-            <Image
-              src="/empty.jpg"
-              alt="Oakwood Experience"
-              layout="fill"
-              objectFit="cover"
-            />
+          <Image
+            src="/gallery_images/IMG_3215.png"
+            alt="Oakwood Experience"
+            layout="fill"
+            objectFit="cover"
+          />
           </div>
         </div>
       </section>

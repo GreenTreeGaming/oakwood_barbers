@@ -37,7 +37,12 @@ const Section2 = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          {['/empty.jpg', '/empty.jpg', '/empty.jpg', '/empty.jpg'].map((src, i) => (
+          {[
+            '/gallery_images/IMG_3175.png',
+            '/gallery_images/IMG_3182.png',
+            '/gallery_images/IMG_3201.png',
+            '/gallery_images/IMG_3210.png',
+          ].map((src, i) => (
             <div key={i} className="relative w-full h-64 overflow-hidden rounded-md">
               <Image
                 src={src}
