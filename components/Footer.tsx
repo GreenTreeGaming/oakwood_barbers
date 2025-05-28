@@ -1,6 +1,8 @@
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
+import { FaInstagram, FaFacebookF, FaPhoneAlt } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -28,24 +30,32 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Right Side: About */}
+        {/* Right Side: Quick Links */}
         <div>
           <h2 className="text-2xl font-bold uppercase mb-4 tracking-wide font-serif">
-            About Oakwood Barbers
+            Quick Links
           </h2>
-          <p className="text-sm text-gray-300 mb-4 leading-relaxed">
-            At Oakwood Barbers, tradition meets precision. We're more than just a barbershop —
-            we’re a neighborhood staple where generations of families have come for clean cuts,
-            beard trims, and timeless style.
-          </p>
-          <p className="text-sm text-gray-300 leading-relaxed">
-            Our skilled barbers are passionate about their craft and committed to delivering top-tier service with every visit.
-            Whether it’s your first time or your hundredth, we make every appointment feel like home.
-          </p>
+          <ul className="text-sm text-gray-300 space-y-3">
+            <li>
+              <Link href="/booking" className="hover:text-orange-500 transition">
+                Book an Appointment
+              </Link>
+            </li>
+            <li>
+              <Link href="/services" className="hover:text-orange-500 transition">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="hover:text-orange-500 transition">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
 
-     {/* Bottom */}
+      {/* Bottom */}
       <div className="text-center text-sm text-gray-400 mt-12 border-t border-gray-700 pt-4">
         Copyright © {new Date().getFullYear()} Oakwood Barbers | Built by{" "}
         <a

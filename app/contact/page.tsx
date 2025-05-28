@@ -52,8 +52,9 @@ const ContactPage = () => {
             <FaClock className="text-orange-500 text-xl mt-1" />
             <div>
               <h3 className="text-lg font-semibold font-serif mb-1">Hours</h3>
-              <p className="text-gray-300">Monday – Tuesday: Closed</p>
-              <p className="text-gray-300">Wednesday – Sunday: 9 AM – 6 PM</p>
+              <p className="text-gray-300">Sunday: Closed</p>
+              <p className="text-gray-300">Tuesday – Friday: 9 AM – 6 PM</p>
+              <p className="text-gray-300">Saturday: 9 AM – 1 PM</p>
             </div>
           </div>
         </div>

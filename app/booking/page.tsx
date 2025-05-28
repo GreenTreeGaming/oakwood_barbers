@@ -34,7 +34,7 @@ const BookingPage = () => {
           Use Booksy to view availability, pick your service, and lock in your time with ease.
         </p>
         <a
-          href="https://booksy.com/"
+          href="https://oakwoodbarbers.booksy.com/a/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-orange-600 hover:bg-orange-700 transition text-white px-8 py-3 font-semibold text-base rounded"
@@ -67,20 +67,21 @@ const BookingPage = () => {
             Hours of Operation
           </h3>
           <p className="text-gray-400 mb-8 text-base">
-            We're open 5 days a week to serve you.
+            We're open throughout the week to serve you.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left text-lg text-gray-300 max-w-md mx-auto">
-            <div>
-              <p><span className="text-white font-semibold">Monday:</span> Closed</p>
-              <p><span className="text-white font-semibold">Tuesday:</span> Closed</p>
-              <p><span className="text-white font-semibold">Wednesday:</span> 9 AM – 6 PM</p>
-            </div>
-            <div>
-              <p><span className="text-white font-semibold">Thursday:</span> 9 AM – 6 PM</p>
-              <p><span className="text-white font-semibold">Friday:</span> 9 AM – 6 PM</p>
-              <p><span className="text-white font-semibold">Saturday:</span> 9 AM – 6 PM</p>
-              <p><span className="text-white font-semibold">Sunday:</span> 9 AM – 6 PM</p>
-            </div>
+          <div className="text-lg text-gray-300 max-w-md mx-auto text-center space-y-3">
+            <p>
+              <span className="text-white font-semibold">Sunday:</span> Closed
+            </p>
+            <p>
+              <span className="text-white font-semibold">Monday:</span> Closed
+            </p>
+            <p>
+              <span className="text-white font-semibold">Tuesday – Friday:</span> 9 AM – 6 PM
+            </p>
+            <p>
+              <span className="text-white font-semibold">Saturday:</span> 9 AM – 1 PM
+            </p>
           </div>
         </div>
       </section>

@@ -11,8 +11,36 @@ import {
   FaEnvelope,
 } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const Section1 = () => {
+  const socialLinks = [
+    {
+      icon: FaFacebookF,
+      url: 'http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.oakwoodbarbers.com&t=Oakwood%20Barbers',
+    },
+    {
+      icon: FaTwitter,
+      url: 'http://twitter.com/share?text=Oakwood%20Barbers&url=https%3A%2F%2Fwww.oakwoodbarbers.com',
+    },
+    {
+      icon: FaGooglePlusG,
+      url: 'https://plus.google.com/share?url=https%3A%2F%2Fwww.oakwoodbarbers.com&t=Oakwood%20Barbers',
+    },
+    {
+      icon: FaPinterestP,
+      url: 'https://www.oakwoodbarbers.com/#',
+    },
+    {
+      icon: FaLinkedinIn,
+      url: 'http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.oakwoodbarbers.com&title=Oakwood%20Barbers',
+    },
+    {
+      icon: FaEnvelope,
+      url: 'mailto:info@oakwoodbarbers.com',
+    },
+  ]
+
   return (
     <section className="relative h-screen w-full text-white font-sans overflow-hidden bg-neutral-950">
       {/* Background Image */}
@@ -47,14 +75,16 @@ const Section1 = () => {
           Experience the art of traditional barbering at Oakwood Barbers, where precision meets tradition.
         </motion.p>
 
-        <motion.button
-          className="mt-8 bg-orange-600 hover:bg-orange-700 transition text-white px-6 py-3 text-sm md:text-base font-semibold font-sans tracking-wide"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.8, duration: 0.5 }}
-        >
-          Book an Appointment →
-        </motion.button>
+        <Link href="/booking">
+          <motion.button
+            className="mt-8 bg-orange-600 hover:bg-orange-700 transition text-white px-6 py-3 text-sm md:text-base font-semibold font-sans tracking-wide"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
+          >
+            Book an Appointment →
+          </motion.button>
+        </Link>
       </div>
 
       {/* Social Icons */}
@@ -64,11 +94,16 @@ const Section1 = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ delay: 1, duration: 0.6 }}
       >
-        {[FaFacebookF, FaTwitter, FaGooglePlusG, FaPinterestP, FaLinkedinIn, FaEnvelope].map((Icon, idx) => (
-          <Icon
+        {socialLinks.map(({ icon: Icon, url }, idx) => (
+          <a
             key={idx}
-            className="text-white hover:text-orange-400 transition duration-300 text-xl cursor-pointer"
-          />
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-orange-400 transition duration-300 text-xl"
+          >
+            <Icon />
+          </a>
         ))}
       </motion.div>
     </section>
