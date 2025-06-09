@@ -18,14 +18,14 @@ const Navbar = () => {
 
   return (
     <header className="bg-neutral-950 text-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
         {/* Logo Image */}
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.tiff" // or your actual logo path
             alt="Oakwood Barbers Logo"
-            width={64}
-            height={64}
+            width={96}
+            height={96}
             className="object-contain"
             priority
           />
