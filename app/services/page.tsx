@@ -17,13 +17,6 @@ const services = [
     price: '$30',
   },
   {
-    name: "Boys' Haircuts",
-    icon: <FaChild />,
-    image: '/gallery_images/IMG_3184.png',
-    desc: 'Fun, stylish cuts for kids of all ages.',
-    price: '$25',
-  },
-  {
     name: 'Beard Trimming & Shaping',
     icon: <FaUserTie />,
     image: '/gallery_images/IMG_3182.png',
